@@ -2,7 +2,6 @@
 
 #pragma once
 
-#include "IPropertyTypeCustomization.h"
 #include "MyPropertyTypeCustomization.h"
 
 /**
@@ -15,11 +14,14 @@ public:
 	*		Public functions
 	* --------------------------------------------------- */
 
+	/** The name of class to be customized. */
+	static const FName PropertyClassName;
+
 	/** Default constructor. */
 	FMorphDataCustomization();
 
 	/** Makes a new instance of this detail layout class for a specific detail view requesting it. */
-	static TSharedRef<class IPropertyTypeCustomization> MakeInstance();
+	static TSharedRef<IPropertyTypeCustomization> MakeInstance();
 
 	/**
 	 * Called when the header of the property (the row in the details panel where the property is shown)
@@ -39,6 +41,14 @@ public:
 	virtual void CustomizeChildren(TSharedRef<IPropertyHandle> PropertyHandle, IDetailChildrenBuilder& ChildBuilder, IPropertyTypeCustomizationUtils& CustomizationUtils) override;
 
 protected:
+	/* ---------------------------------------------------
+	*		Protected properties
+	* --------------------------------------------------- */
+
+	/** A name of the last mesh. When is not changed, refreshing of a custom property will be skipped.
+	* @see FMorphDataCustomization::RefreshCustomProperty() */
+	FName CachedMeshNameInternal = NAME_None;
+
 	/* ---------------------------------------------------
 	*		Protected functions
 	* --------------------------------------------------- */
