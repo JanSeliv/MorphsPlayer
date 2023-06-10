@@ -7,6 +7,8 @@
 #if WITH_EDITOR
 #include "Editor.h"
 #endif // WITH_EDITOR
+//---
+#include UE_INLINE_GENERATED_CPP_BY_NAME(AnimNotifyState_PlayMorph)
 
 // Overridden from UAnimNotifyState to provide custom notify name
 FString UAnimNotifyState_PlayMorph::GetNotifyName_Implementation() const
