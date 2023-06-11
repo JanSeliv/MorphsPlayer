@@ -4,6 +4,7 @@
 //---
 #include "MorphsPlayerTypes.h"
 //---
+#include "PropertyEditorModule.h"
 #include "Animation/AnimNotifies/AnimNotifyState.h"
 
 typedef FMorphDataCustomization ThisClass;
