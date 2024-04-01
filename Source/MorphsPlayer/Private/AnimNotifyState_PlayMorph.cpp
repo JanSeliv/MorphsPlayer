@@ -2,6 +2,7 @@
 
 #include "AnimNotifyState_PlayMorph.h"
 //
+#include "Components/SkeletalMeshComponent.h"
 #include "Curves/CurveFloat.h"
 //---
 #if WITH_EDITOR

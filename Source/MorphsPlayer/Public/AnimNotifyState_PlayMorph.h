@@ -30,6 +30,7 @@ public:
 	 * @param MeshComp Current used mesh component.
 	 * @param Animation Current played animation.
 	 * @param TotalDuration How long the notify is played. Is determined by amount of frames dragged on an animation track.
+	 * @param EventReference Reference to the notify event.
 	 */
 	virtual void NotifyBegin(USkeletalMeshComponent* MeshComp, UAnimSequenceBase* Animation, float TotalDuration, const FAnimNotifyEventReference& EventReference) override;
 
@@ -38,6 +39,7 @@ public:
    	 * @param MeshComp Current used mesh component.
 	 * @param Animation Current played animation.
 	 * @param FrameDeltaTime Tick time.
+	 * @param EventReference Reference to the notify event.
 	 */
 	virtual void NotifyTick(USkeletalMeshComponent* MeshComp, UAnimSequenceBase* Animation, float FrameDeltaTime, const FAnimNotifyEventReference& EventReference) override;
 
@@ -45,6 +47,7 @@ public:
 	 * Is called before destroying.
 	 * @param MeshComp Current used mesh component.
 	 * @param Animation Current played animation.
+	 * @param EventReference Reference to the notify event.
 	 */
 	virtual void NotifyEnd(USkeletalMeshComponent* MeshComp, UAnimSequenceBase* Animation, const FAnimNotifyEventReference& EventReference) override;
 
