@@ -2,6 +2,7 @@
 
 #include "AnimNotifyState_PlayMorph.h"
 //
+#include "Components/SkeletalMeshComponent.h"
 #include "Curves/CurveFloat.h"
 //---
 #if WITH_EDITOR
@@ -53,6 +54,8 @@ void UAnimNotifyState_PlayMorph::NotifyTick(USkeletalMeshComponent* MeshComp, UA
 void UAnimNotifyState_PlayMorph::NotifyEnd(USkeletalMeshComponent* MeshComp, UAnimSequenceBase* Animation, const FAnimNotifyEventReference& EventReference)
 {
 	Super::NotifyEnd(MeshComp, Animation, EventReference);
+
+	MeshCompInternal = nullptr;
 }
 
 // Create a new curve, is created once

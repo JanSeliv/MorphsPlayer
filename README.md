@@ -31,6 +31,8 @@ Check out our [Release](https://github.com/JanSeliv/MorphsPlayer/releases) page 
 Also, explore this [game project repository](https://github.com/JanSeliv/Bomber) to view the Morphs Player in action.
 
 ## 📅 Changelog
+#### 
+- Updated to **Unreal Engine 5.4**.
 #### 2024-01-14
 - Updated to **Unreal Engine 5.3**.
 #### 2023-06-09
