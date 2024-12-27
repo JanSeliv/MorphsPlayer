@@ -5,7 +5,10 @@
 #include "MorphsPlayerTypes.h"
 //---
 #include "PropertyEditorModule.h"
+#include "Animation/AnimSequence.h"
 #include "Animation/AnimNotifies/AnimNotifyState.h"
+#include "Engine/SkeletalMesh.h"
+#include "Modules/ModuleManager.h"
 
 typedef FMorphDataCustomization ThisClass;
 

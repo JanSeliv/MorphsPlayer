@@ -6,7 +6,7 @@ public class MorphsPlayer : ModuleRules
 {
 	public MorphsPlayer(ReadOnlyTargetRules Target) : base(Target)
 	{
-		PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
+		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 		CppStandard = CppStandardVersion.Latest;
 		bEnableNonInlinedGenCppWarnings = true;
 

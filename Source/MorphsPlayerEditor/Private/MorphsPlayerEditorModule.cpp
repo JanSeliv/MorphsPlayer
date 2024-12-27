@@ -3,8 +3,8 @@
 #include "MorphsPlayerEditorModule.h"
 //---
 #include "MorphDataCustomization.h"
-
-#define LOCTEXT_NAMESPACE "FMorphsPlayerEditorModule"
+//---
+#include "Modules/ModuleManager.h"
 
 // Called right after the module DLL has been loaded and the module object has been created
 void FMorphsPlayerEditorModule::StartupModule()
@@ -18,6 +18,4 @@ void FMorphsPlayerEditorModule::ShutdownModule()
 	FMorphDataCustomization::UnregisterMorphDataCustomization();
 }
 
-#undef LOCTEXT_NAMESPACE
-    
 IMPLEMENT_MODULE(FMorphsPlayerEditorModule, MorphsPlayerEditor)
